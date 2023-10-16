@@ -24,7 +24,8 @@ for i in range(9):
     prev = cur
 
 print(f'min: {min_abs_dif}')
-print(f'max: {max_abs_dif}')
+# print(f'max: {max_abs_dif}')
+print(f'{max_abs_dif - min_abs_dif}')
 
 # Сделать повторный ввод при ошибке
 # Вывести максимальную разницу между разностью всех соседних чисел
