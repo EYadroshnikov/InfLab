@@ -4,3 +4,4 @@ theory/
 */.DS_Store
 .idea
 */.idea
+qodana.yaml

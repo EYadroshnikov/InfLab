@@ -4,25 +4,20 @@
 # a - 97 | а - 1072
 # diff - 32
 
+def lower(word):
+    if not ('a' <= word[0] <= 'z' or 'а' <= word[0] <= 'я'):
+        return chr(ord(word[0]) + 32) + word[1:]
+    return word
 
-# diff - 32 
+
 words = input().split()
 
 for i in range(len(words)):
-    for j in range(i+1, len(words)):
-        # t_si = words[i] if 'a' <= words[i][0] <= 'z' or 'а' <= words[i][0] <= 'я' else chr(ord(words[i][0]) + 32) + words[i][1:]
-        # t_sj = words[j] if 'a' <= words[j][0] <= 'z' or 'а' <= words[j][0] <= 'я' else chr(ord(words[j][0]) + 32) + words[j][1:]
-        if not('a' <= words[i][0] <= 'z' or 'а' <= words[i][0] <= 'я'):
-            t_si = chr(ord(words[i][0]) + 32) + words[i][1:]
-        else:
-            t_si = words[i]
+    for j in range(i + 1, len(words)):
+        t_wordi = lower(words[i])
+        t_wordj = lower(words[j])
 
-        if not('a' <= words[j][0] <= 'z' or 'а' <= words[j][0] <= 'я'):
-            t_sj = chr(ord(words[j][0]) + 32) + words[j][1:]
-        else:
-            t_sj = words[j]
-
-        if t_si[0] > t_sj[0]:
+        if t_wordi[0] > t_wordj[0]:
             words[i], words[j] = words[j], words[i]
 
 print(' '.join(words))
