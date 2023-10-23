@@ -5,3 +5,6 @@ theory/
 .idea
 */.idea
 qodana.yaml
+*/.docx
+*/.png
+*/.pdf
