@@ -9,8 +9,8 @@
 # регистра (97 - 122 или 1072 - 1103), то функция возвращает строку, состоящую из первого символа + сдвиг до нижнего
 # регистра и исходное слово без первого символа
 def lower(word, idx):
-    if not ('a' <= word[0] <= 'z' or 'а' <= word[0] <= 'я'):
-        return chr(ord(word[0]) + 32) + word[1:]
+    if not ('a' <= word[idx] <= 'z' or 'а' <= word[idx] <= 'я'):
+        return word[:idx] + chr(ord(word[idx]) + 32) + word[idx + 1:]
     return word
 
 
