@@ -1,0 +1,65 @@
+{
+  "autoparts": [
+    {
+      "id": 2,
+      "name": "second",
+      "brand": "S",
+      "price": 321.0
+    },
+    {
+      "id": 4,
+      "name": "ewuyfj",
+      "brand": "ewfkg",
+      "price": 123.0
+    },
+    {
+      "id": 3,
+      "name": "hgfv",
+      "brand": "vh",
+      "price": 123.0
+    }
+  ],
+  "brands": [
+    {
+      "id": 1,
+      "name": "S"
+    },
+    {
+      "id": 2,
+      "name": "vh"
+    }
+  ],
+  "shops": [
+        {
+            "id": 1,
+            "name": "one"
+        },
+        {
+            "id": 2,
+            "name": "two"
+        },
+        {
+            "id": 3,
+            "name": "three"
+        }
+    ],
+    "sellers": [
+        {
+            "id": 1,
+            "name": "Екатерина Киреева",
+            "shop_id": 1,
+            "contacts": {
+                "email": "Kireeva@example.com",
+                "phone": "+1122334455"
+            }
+        },
+        {
+            "id": 2,
+            "name": "Варвара Волкова",
+            "shop_id": 2,
+            "contacts": {
+                "email": "Volkova@example.com",
+                "phone": "+6677889911"
+            }
+        },
+}

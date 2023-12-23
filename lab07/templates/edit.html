@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Autopart</title>
+</head>
+<body>
+    <h1>Edit Autopart</h1>
+    <a href="{{ url_for('index') }}">Home</a>
+    <form action="{{ url_for('update_autopart', autopart_id=autopart['id']) }}" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" value="{{ autopart['name'] }}" required>
+        <label for="brand">Brand:</label>
+        <input type="text" name="brand" value="{{ autopart['brand'] }}" required>
+        <label for="price">Price:</label>
+        <input type="number" name="price" step="0.01" value="{{ autopart['price'] }}" required>
+        <button type="submit">Update Autopart</button>
+    </form>
+</body>
+</html>
